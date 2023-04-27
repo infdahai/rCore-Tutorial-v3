@@ -60,5 +60,6 @@ pub fn rust_main() -> ! {
         boot_stack as usize, boot_stack_top as usize,
     );
     trace!(".bss [{:#x}, {:#x})", sbss as usize, ebss as usize);
+    println!("\x1b[31mhello world\x1b[0m");
     panic!("Shutdown machine!");
 }
